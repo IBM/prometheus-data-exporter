@@ -1,0 +1,33 @@
+{
+"LIST OF ALL":            "['min', 'max', 'avg', 'p25', 'p50', 'p75', 'start', 'end', 'change']",
+
+"#countSummaryList":       "['min', 'max', 'avg']",
+"countSummaryList":       "['avg']",
+"#cpuSummaryList":         "['min', 'max', 'avg', 'p25', 'p50', 'p75', 'start', 'end', 'change']",
+"cpuSummaryList":         "['min', 'max', 'avg', 'start', 'end', 'change']",
+"memSummaryList":         "['min', 'max', 'avg', 'start', 'end', 'change']",
+"netSummaryList":         "['min', 'max', 'avg']",
+"diskSummaryList":        "['min', 'max', 'avg', 'start', 'end', 'change']",
+"fsSummaryList":          "['min', 'max', 'avg', 'start', 'end', 'change']",
+"pvSummaryList":          "['min', 'max', 'avg', 'start', 'end', 'change']",
+"cpuCalcSummaryList":     "['min', 'max', 'avg']",
+"memCalcSummaryList":     "['min', 'max', 'avg']",
+"summaryReqLimList":      "['avg']",
+"summaryReqLimListNodes": "['min', 'max', 'avg']",
+"probeSummaryList": 	  "['max']",
+
+
+
+"#memReq memLim ratio":    {"standard": "50:", "messageLower": "Memory request is significantly below the desired ratio to the limit.", "monitoring-cassandra": "90:"},
+"#memLim memReq diff":    {"standard": ":1000", "messageUpper": "Memory request is significantly below the desired difference from the limit.", "monitoring-cassandra": "1000:"},
+
+"CPUr cpuReq ratio":    {"standard": "0:100", "messageLower": "CPU usage is significantly below the desired ratio to the request, not enough load?", "messageUpper": "CPU usage is significantly above the allowed ratio to the request, too much load?"},
+
+"#memUse memLim ratio":   {"standard": "50:90", "messageLower": "Memory usage vs limit ratio is very low, not enough load?",  "messageUpper": "Memory usage vs limit ratio is very high, running low on RAM? Or just kernel cache?"},
+"#memLim memUse diff":    {"standard": "10:200",  "messageLower": "Memory limit minus usage difference is very low, running low on RAM? Or just the kernel cache?", "messageUpper": "Memory limit minus usage difference is very high, not enough load?"},
+
+"RSS memLim ratio":   {"standard": "5:90", "messageLower": "Memory RSS vs limit ratio is very low, not enough load? Or used by kernel cache?",  "messageUpper": "Memory RSS vs limit ratio is very high, running low on RAM?"},
+"#memLim RSS diff":    {"standard": "50:200",  "messageLower": "Memory limit minus RSS difference is very low, running low on RAM?",  "messageUpper": "Memory limit minus RSS difference is very high, not enough load? Or used by kernel cache?"}
+
+
+}
