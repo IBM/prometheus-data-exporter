@@ -1,0 +1,18 @@
+{
+    "cluster": {
+        "namespace": {
+            "stats": {
+                "cpuReq\nmax\n (cores)": {"rows": ["REPLACE_NAMESPACE", "namespace2"], "comparison": ">", "threshold": 5},
+                "memReq\nmax\n (Mi)": {"rows": ["REPLACE_NAMESPACE", "namespace2"], "comparison": ">", "threshold": 5},
+                "cpuLim\nmax\n (cores)": {"rows": ["REPLACE_NAMESPACE", "namespace2"], "comparison": ">", "threshold": 5},
+                "memLim\nmax\n (Mi)": {"rows": ["REPLACE_NAMESPACE", "namespace2"], "comparison": ">", "threshold": 5}
+            }
+        }
+    },
+    "REPLACE_NAMESPACE": {
+
+    },
+    "namespace2": {
+
+    }
+}
